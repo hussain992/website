@@ -8,11 +8,6 @@ import {
   color,
   display,
   position,
-  hover,
-  focus,
-  active,
-  disabled,
-  radii,
   borders,
   borderColor,
   zIndex } from 'styled-system'
@@ -27,12 +22,7 @@ import {
   ${color}
   ${display}
   ${position}
-  ${hover}
-  ${focus}
-  ${active}
-  ${disabled}
   ${zIndex}
-  ${radii}
   ${borders}
   ${borderColor}
 `;

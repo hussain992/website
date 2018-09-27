@@ -33,7 +33,6 @@ const Flex = styled.div`
   ${justifyContent}
   ${alignContent}
   ${color}
-  ${radii}
 `;
 
 export default Flex;

@@ -4,6 +4,8 @@ import './App.css';
 import {ThemeProvider} from 'styled-components';
 import APP_THEME from './theme'
 import NavBarContainer from './Components/NavBarContainer';
+import Banner from './Components/Banner';
+
 
 class App extends Component {
   render() {
@@ -18,7 +20,10 @@ class App extends Component {
       //   </p>
       // </div>
       <ThemeProvider theme={APP_THEME}>
+        <div>
         <NavBarContainer/>
+        <Banner/>
+        </div>
       </ThemeProvider>
     );
   }
