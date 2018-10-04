@@ -5,6 +5,7 @@ import {ThemeProvider} from 'styled-components';
 import APP_THEME from './theme'
 import NavBarContainer from './Components/NavBarContainer';
 import Banner from './Components/Banner';
+import ArtCake from './Components/ArtCake';
 
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
         <div>
         <NavBarContainer/>
         <Banner/>
+        <ArtCake/>
         </div>
       </ThemeProvider>
     );

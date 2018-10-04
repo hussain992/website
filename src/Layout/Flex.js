@@ -19,7 +19,6 @@ import {
 const Flex = styled.div`
   display: flex;
   flex-direction: row;
-  font-family:"karla";
   ${space}
   ${height}
   ${width}

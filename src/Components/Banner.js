@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
-import { space } from 'styled-system';
 import Container from '../Layout/Container';
 import Text from '../Layout/Text';
 import Flex from '../Layout/Flex';
@@ -81,7 +80,7 @@ const White = styled(Flex)`
 export default class Banner extends Component {
   render() {
     return (
-      <Box position="relative" height={750}>
+      <Box mb={5} position="relative" height={900}>
         <Image src="/Static/assets/hero-jpg.png" /> 
         {/* <Align position="absolute"> */}
           <BannerFlex justifyContent="center" alignItems="center" width={1}>
