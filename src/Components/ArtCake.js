@@ -90,7 +90,7 @@ export default class ArtCake extends Component {
                 <ChefName fontSize={24} letterSpacing="0.6px" color="#56534c">
                   Benito
                 </ChefName>
-                <img src="/Static/assets/chef-cook-jpg.png"/>
+                <img width="100px" height="100px" src="https://website.s3.nl-ams.scw.cloud/chef-cook-jpg@3x.png"/>
                 <ChefName fontSize={24} letterSpacing="0.6px" color="#56534c">
                   Gaspare
                 </ChefName>
@@ -108,21 +108,21 @@ export default class ArtCake extends Component {
             <Box width={1} height="fit-content" position="relative">
               <Flex flexWrap="wrap">
                 <Box width="50%">
-                  <img width="100%" src="/Static/assets/img-top-left.png"/>                
+                  <img width="100%" src="https://website.s3.nl-ams.scw.cloud/img-top-left.png"/>                
                 </Box>
                 <Box width="50%">
-                  <img width="100%" src="/Static/assets/img-top-left.png"/>                
+                  <img width="100%" src="https://website.s3.nl-ams.scw.cloud/img-top-right-copy-jpg.png"/>               
                 </Box>
                 <Box width="50%">
-                  <img width="100%" src="/Static/assets/img-top-left.png"/>                
+                  <img width="100%" src="https://website.s3.nl-ams.scw.cloud/img-bottom-left-copy-jpg.png"/>                
                 </Box>
                 <Box width="50%">
-                  <img width="100%" src="/Static/assets/img-top-left.png"/>                
+                  <img width="100%" src="https://website.s3.nl-ams.scw.cloud/img-bottom-right-copy-jpg.png"/>                
                 </Box>
               </Flex>
               <TasteTag>
                 <Box position="relative">
-                  <img width="100%" src="/Static/assets/new-label.png"/>
+                  <img width="100%" src="https://website.s3.nl-ams.scw.cloud/new-label.png"/>
                   <Label color="#c9b176" >
                     taste so good!
                   </Label>

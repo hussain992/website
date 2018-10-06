@@ -28,7 +28,9 @@ export default class NavBarContainer extends Component {
         <Container>
           <Flex alignItems="center">
             <Box>
-              <img src="/Static/assets/gustoso-logo-jpg.png" />
+              {/* <img src="/Static/assets/gustoso-logo-jpg.png" /> */}
+              <img src="https://website.s3.nl-ams.scw.cloud/gustoso-logo-jpg.png" /> 
+              
             </Box>
             <Flex width={1} mx={5} justifyContent="space-between">
               <NavName> Welcome </NavName>
@@ -43,9 +45,12 @@ export default class NavBarContainer extends Component {
 
             </Flex>
             <Flex width={150} justifyContent="space-between">
-              <img src="/Static/assets/logo-facebook-jpg.png" />
+              {/* <img src="/Static/assets/logo-facebook-jpg.png" />
               <img src="/Static/assets/logo-instagram-jpg.png" />
-              <img src="/Static/assets/logo-twitter-jpg.png" />
+              <img src="/Static/assets/logo-twitter-jpg.png" /> */}
+              <img src="https://website.s3.nl-ams.scw.cloud/logo-facebook-jpg.png" />
+              <img src="https://website.s3.nl-ams.scw.cloud/logo-instagram-jpg.png" />               
+              <img src="https://website.s3.nl-ams.scw.cloud/logo-twitter-jpg.png" />                             
             </Flex>
           </Flex>
         </Container>

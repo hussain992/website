@@ -81,7 +81,7 @@ export default class Banner extends Component {
   render() {
     return (
       <Box mb={5} position="relative" height={900}>
-        <Image src="/Static/assets/hero-jpg.png" /> 
+        <Image src="https://website.s3.nl-ams.scw.cloud/hero-jpg.png" /> 
         {/* <Align position="absolute"> */}
           <BannerFlex justifyContent="center" alignItems="center" width={1}>
             <Tagline color="white" fontSize={92}>Pastry with love </Tagline>
@@ -95,7 +95,9 @@ export default class Banner extends Component {
           </BannerFlex>
           <AlignImage justifyContent="center">
             <White width={80} height={80}>
-              <img src="/Static/assets/food-jpg.png"/>
+              {/* <img src="/Static/assets/food-jpg.png"/> */}
+              <img src="https://website.s3.nl-ams.scw.cloud/food-jpg.png.png"/>
+
             </White>
           </AlignImage>
 

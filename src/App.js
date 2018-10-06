@@ -6,6 +6,8 @@ import APP_THEME from './theme'
 import NavBarContainer from './Components/NavBarContainer';
 import Banner from './Components/Banner';
 import ArtCake from './Components/ArtCake';
+import Pancakes from './Components/Pancakes';
+
 
 
 class App extends Component {
@@ -25,6 +27,7 @@ class App extends Component {
         <NavBarContainer/>
         <Banner/>
         <ArtCake/>
+        <Pancakes/>
         </div>
       </ThemeProvider>
     );
