@@ -2,4 +2,39 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Alegreya', serif;
+  color: #56534c;
 }
+
+
+/* owl carousel css */
+
+.owl-prev {
+  width: 30px;
+  position: absolute;
+  top: 25%;
+  margin-left: -50px !important;
+  display: block!IMPORTANT;
+  border:0px solid black;
+  padding-top: 45px;
+  background-color: transparent !important;
+}
+
+.owl-next {
+  width: 30px;
+  position: absolute;
+  top: 25%;
+  right: -50px;
+  display: block!IMPORTANT;
+  border:0px solid black;
+  padding-top: 45px;
+  background-color: transparent !important;
+  
+}
+.owl-theme .owl-dots .owl-dot span {
+  background-color: #d8bba3 !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #e8976c !important;
+}
+/* .owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;} */

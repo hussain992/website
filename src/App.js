@@ -7,6 +7,9 @@ import NavBarContainer from './Components/NavBarContainer';
 import Banner from './Components/Banner';
 import ArtCake from './Components/ArtCake';
 import Pancakes from './Components/Pancakes';
+import Breakfast from './Components/Breakfast';
+import Sandwich from './Components/Sandwich';
+
 
 
 
@@ -24,10 +27,12 @@ class App extends Component {
       // </div>
       <ThemeProvider theme={APP_THEME}>
         <div>
-        <NavBarContainer/>
-        <Banner/>
-        <ArtCake/>
-        <Pancakes/>
+          {/* <NavBarContainer/> */}
+          {/* <Banner/> */}
+          {/* <ArtCake/> */}
+          {/* <Pancakes/> */}
+          {/* <Breakfast/> */}
+          <Sandwich/>
         </div>
       </ThemeProvider>
     );

@@ -96,7 +96,7 @@ export default class Banner extends Component {
           <AlignImage justifyContent="center">
             <White width={80} height={80}>
               {/* <img src="/Static/assets/food-jpg.png"/> */}
-              <img src="https://website.s3.nl-ams.scw.cloud/food-jpg.png.png"/>
+              <img src="https://website.s3.nl-ams.scw.cloud/food-jpg.png"/>
 
             </White>
           </AlignImage>
