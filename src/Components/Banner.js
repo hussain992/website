@@ -40,10 +40,16 @@ const Dashed = styled.div`
 `;
 
 const Info = styled(Text)`
-  font-size: 24px;
   line-height: 1.5;
   text-shadow: 0px 1px 0 #3d3029;
   width: 550px;
+
+  @media only screen and (max-width: 767px) {
+    width: 80%;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: auto;
+  }
 `;
 
 const MenuButton = styled.div`
@@ -61,7 +67,18 @@ const MenuButton = styled.div`
   color: white;
   cursor: pointer;
   font-weight: bold;
+  @media only screen and (max-width: 767px) {
+    width: 130px;
+    height: 40px;
+    font-size: 12px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+  }
 `;
+
 const AlignImage =styled(Flex)`
   position: absolute;
   bottom: 42px;
@@ -69,6 +86,9 @@ const AlignImage =styled(Flex)`
   right: 0;
   text-align:center;
   margin: 0 auto;
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
 `;
 const White = styled(Flex)`
   border-radius: 50%;
@@ -77,19 +97,24 @@ const White = styled(Flex)`
   align-items: center;
   justify-content: center;
 `;
+const StyleBox = styled(Box)`
+  @media only screen and (max-width: 767px) {
+    top: 60px;
+  }
+`;
 export default class Banner extends Component {
   render() {
     return (
-      <Box mb={5} position="relative" height={900}>
+      <StyleBox mb={[44,5]} position="relative">
         <Image src="https://website.s3.nl-ams.scw.cloud/hero-jpg.png" /> 
         {/* <Align position="absolute"> */}
           <BannerFlex justifyContent="center" alignItems="center" width={1}>
-            <Tagline color="white" fontSize={92}>Pastry with love </Tagline>
-            <Box pt={4}>
+            <Tagline pt={[0,40,0]}color="white" fontSize={[32,64,92]}> Pastry with love </Tagline>
+            <Box pt={[2,3,4]}>
               <Line/>
               <Dashed/>
             </Box>
-            <Info fontFamily="proxima" color="white" textAlign="center" py={5}>
+            <Info fontSize={[14,18,24]} fontFamily="proxima" color="white" textAlign="center" py={[2,4,5]}>
               We’re bringing you fresh ingredients every day in ways you can’t resist.</Info>
             <MenuButton> our menu</MenuButton>
           </BannerFlex>
@@ -102,7 +127,7 @@ export default class Banner extends Component {
           </AlignImage>
 
         {/* </Align> */}
-      </Box>
+      </StyleBox>
     );
   }
 }

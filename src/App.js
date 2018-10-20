@@ -10,7 +10,7 @@ import Pancakes from './Components/Pancakes';
 import Breakfast from './Components/Breakfast';
 import Sandwich from './Components/Sandwich';
 
-
+import Box from './Layout/Box';
 
 
 class App extends Component {
@@ -26,14 +26,14 @@ class App extends Component {
       //   </p>
       // </div>
       <ThemeProvider theme={APP_THEME}>
-        <div>
+        <Box position="relative">
           {/* <NavBarContainer/> */}
           {/* <Banner/> */}
-          {/* <ArtCake/> */}
-          {/* <Pancakes/> */}
+          <ArtCake/>
+          <Pancakes/>
           {/* <Breakfast/> */}
-          <Sandwich/>
-        </div>
+          {/* <Sandwich/>  */}
+        </Box>
       </ThemeProvider>
     );
   }

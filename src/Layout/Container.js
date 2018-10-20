@@ -5,8 +5,9 @@ const StyledContainer = styled.div`
   width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1200px) {
     width: 100%;
+    width: calc(100% - 30px);
   }
 `
 export default class Container extends Component {

@@ -46,17 +46,19 @@ const ReadButton = styled(Box)`
   font-weight: bold;
 `;
 
-
+const StyleBox = styled(Box)`
+  bottom: -6px;
+`;
 export default class breakfast extends Component {
   render() {
     return (
-      <Box height={760} position="relative">
-        <img src="/Static/assets/fourth-section-jpg.png"/>
+      <StyleBox position="relative">
+        <img width="100%" src="https://website.s3.nl-ams.scw.cloud/fourth-section-jpg.png"/>
         <Absolute>
           <Container>
             <Flex>
               <Box width={0.5} >
-                <Text textAlign="center" fontSize={60} fontWeight="bold" letterSpacing="3px" lineHeight={1} color="white">Breakfast</Text>
+                <Text textAlign="center" pt={4} fontSize={60} fontWeight="bold" letterSpacing="3px" lineHeight={1} color="white">Breakfast</Text>
                 <BFText pb={5} textAlign="center" fontSize={17} fontWeight="bold" letterSpacing="1px" color="#c8a593"> 7AM BREAKFAST? WE’RE OPEN! </BFText>
                 <Box>
                   <Text textAlign="center" fontSize={30} fontWeight="bold" letterSpacing="1.5px" color="white" pt={3  }>Full Breakfast</Text>
@@ -71,11 +73,11 @@ export default class breakfast extends Component {
                 <Box>
                   <Text textAlign="center" fontSize={30} fontWeight="bold" letterSpacing="1.5px" color="white" pt={3}> Muffins </Text>
                   <Text textAlign="center" fontSize={16} fontWeight="bold" letterSpacing="0.8px" color="#c2beba" pt={1}> Fusce eget dui sodales est</Text>
-                  <Price textAlign="center" pt={3} pb={4}> $3.95 </Price>
+                  <Price textAlign="center" pt={3} pb={1}> $3.95 </Price>
                 </Box>
               </Box>
-              <Box width={0.5} position="relative">
-                <img src="Static/assets/est-1893-jpg.png" />
+              <Box width={0.5} position="relative" mt={4}>
+                <img src="https://website.s3.nl-ams.scw.cloud/est-1893-jpg.png" />
                 <BFCard pr={150} position="absolute" pt={4}>
                   <Flex py={4} justifyContent="center" width={1} justifyContent="space-around">
                     <Text color="#56534c" fontSize="14px"> EST </Text>
@@ -93,7 +95,7 @@ export default class breakfast extends Component {
             </Flex>
           </Container>
         </Absolute>
-      </Box>
+      </StyleBox>
     )
   }
 }
