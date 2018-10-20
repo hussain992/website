@@ -27,12 +27,12 @@ class App extends Component {
       // </div>
       <ThemeProvider theme={APP_THEME}>
         <Box position="relative">
-          {/* <NavBarContainer/> */}
-          {/* <Banner/> */}
+          <NavBarContainer/>
+          <Banner/>
           <ArtCake/>
           <Pancakes/>
-          {/* <Breakfast/> */}
-          {/* <Sandwich/>  */}
+          <Breakfast/>
+          <Sandwich/> 
         </Box>
       </ThemeProvider>
     );

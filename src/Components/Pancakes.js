@@ -20,6 +20,16 @@ const Absolute = styled(Flex)`
   justify-content: center;
   width: 100%;
   height: 100%;
+  @media only screen and (max-width: 767px) {
+    height: auto;
+    bottom: auto;
+    top: 15px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    height: auto;
+    bottom: auto;
+    top: 50px;
+  }
 `;
 
 const InnerImage = styled(Flex)`
@@ -49,7 +59,7 @@ const StyledContainer = styled.div`
 export default class pancakes extends Component {
   render() {
     return (
-      <StyleBox  position="relative">
+      <StyleBox height={["800px","1000px","auto"]} position="relative">
         <img width="100%" src="https://website.s3.nl-ams.scw.cloud/third-section-bg-jpg.png"/>
         <Absolute>
           <StyledContainer>
@@ -65,7 +75,7 @@ export default class pancakes extends Component {
             <Box display={['block','block','none']}>
               <Flex alignItems="center" width={1} mx="auto">
                 <Box width={['150px','250px']}>
-                  <img width="100%" src="https://website.s3.nl-ams.scw.cloud/cake-small.png" />
+                  <img width="100%" height="100%" src="https://website.s3.nl-ams.scw.cloud/cake-small.png" />
                 </Box>
               </Flex>
               <Box>

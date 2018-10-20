@@ -106,7 +106,7 @@ export default class Banner extends Component {
   render() {
     return (
       <StyleBox mb={[44,5]} position="relative">
-        <Image src="https://website.s3.nl-ams.scw.cloud/hero-jpg.png" /> 
+        <Image width="100%" src="https://website.s3.nl-ams.scw.cloud/hero-jpg.png" /> 
         {/* <Align position="absolute"> */}
           <BannerFlex justifyContent="center" alignItems="center" width={1}>
             <Tagline pt={[0,40,0]}color="white" fontSize={[32,64,92]}> Pastry with love </Tagline>
