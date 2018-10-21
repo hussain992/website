@@ -15,6 +15,9 @@ const Capital = styled(Text)`
   @media only screen and (max-width: 767px) {
     font-size: 10px;
   }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    font-size: 12px;
+  }
 `;
 
 const BgImgBox = styled(Box)`
@@ -36,7 +39,7 @@ const PreparationBox = styled(Flex)`
   justify-content: space-around;
   align-items: center;
   @media only screen and (max-width: 767px) {
-    height: 220px;
+    height: 250px;
     width: 70px;
   }
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -55,11 +58,14 @@ const RecipeBox = styled(Box)`
   display: flex;
   align-items: flex-end;
   @media only screen and (max-width: 767px) {
-    height: 200px;
+    height: 260px;
     left: -8px;
   }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 991px) {
     height: 515px;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    height: 465px;
   }
 `;
 
@@ -88,7 +94,7 @@ const ChefName = styled(Text)`
     margin: 0px;
     padding: 15px 10px;
   }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     margin: 0px;
   }
 `;
@@ -123,7 +129,9 @@ export default class pancakes extends Component{
               </CenterBox>
             </Flex>
             <Box width={[1,1,0.7]} position="relative">
-              <img width="100%" src="https://website.s3.nl-ams.scw.cloud/final-section-img-copy-jpg.png" />
+              <Box height={["270px","540px","470px","586px"]}>
+                <img height="100%" width="100%" src="https://website.s3.nl-ams.scw.cloud/final-section-img-copy-jpg.png" />
+              </Box>
               <PreparationBox>
                 <Box pb={[0,0]}>
                   <Capital color="#a47d5e" fontSize={[12,18]} fontWeight="bold" letterSpacing="1.8px" lineHeight={["px","30px"]}> prep </Capital>
@@ -151,7 +159,7 @@ export default class pancakes extends Component{
 
          <Flex flexDirection={["column","row"]} justifyContent="center" pb={3}>
             <ChefName fontSize={14} letterSpacing="4.2px" color="#56534c">
-              <Flex width={380} mx={[0,4]} justifyContent="space-between" alignItems="center">
+              <Flex width={[380,300,360]} mx={[0,2,3]} justifyContent="space-between" alignItems="center">
                 <Capital> Our menu </Capital>
                 <Capital> ~ </Capital>
                 <Capital> gallery </Capital>
@@ -159,9 +167,9 @@ export default class pancakes extends Component{
                 <Capital> culture </Capital>
               </Flex>
             </ChefName>
-            <Text fontFamily="scriptin" textAlign="center" fontSize={[21,30]} letterSpacing="9px" mx={4}> Gustoso </Text>
+            <Text fontFamily="scriptin" textAlign="center" fontSize={[21,24,30]} letterSpacing="9px" mx={[3,3,4]}> Gustoso </Text>
             <ChefName fontSize={14} letterSpacing="0.6px" color="#56534c">
-              <Flex width={380} mx={[0,4]} justifyContent="space-between" alignItems="center">
+              <Flex width={[380,230,300,360]} mx={[0,2,3]} justifyContent="space-between" alignItems="center">
                 <Capital> Events </Capital>
                 <Capital> ~ </Capital>
                 <Capital> Catering </Capital>

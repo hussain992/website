@@ -13,9 +13,11 @@ const Absolute = styled(Flex)`
   justify-content: center;
   width: 100%;
   height: 100%;
+  background-color: #a9a9a933;
   @media only screen and (max-width: 767px) {
     bottom: auto;
     height: auto;
+
   }
   @media (min-width: 768px) and (max-width: 1023px) {
     bottom: auto;
@@ -74,8 +76,8 @@ const CardBox = styled(Box)`
 export default class breakfast extends Component {
   render() {
     return (
-      <StyleBox height={["960px","550px","auto"]} position="relative">
-        <Box height={['400px','550px','auto']}>
+      <StyleBox height={["920px","550px","650px","auto"]} position="relative">
+        <Box height={['400px','550px',"650px",'auto']}>
           <img height="100%" width="100%" src="https://website.s3.nl-ams.scw.cloud/fourth-section-jpg.png"/>
         </Box>
         <Absolute>
@@ -100,7 +102,7 @@ export default class breakfast extends Component {
                   <Price textAlign="center" pt={[1,3]} pb={1}> $3.95 </Price>
                 </Box>
               </Box>
-              <CardBox width={[1,0.6,0.5]} position="relative" mt={4}>
+              <CardBox width={[1,0.6,0.5]} position="relative" mt={[72,4]}>
                 <Box width={['150%','100%']}>
                   <img width="100%" src="https://website.s3.nl-ams.scw.cloud/est-1893-jpg.png" />
                 </Box>

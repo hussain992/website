@@ -54,7 +54,7 @@ const WindImgBox = styled(Box)`
 `;
 
 const TimeBox = styled(Flex)`
-  top : -120px;
+  top : -100px;
   right: -120px;
   position: absolute;
   margin-right: 15px;
@@ -62,8 +62,13 @@ const TimeBox = styled(Flex)`
   @media only screen and (max-width: 767px) {
     display: none;
   }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 992px) {
     display: none;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    right: -10px;
+    margin-right: 0px;
+
   }
 `;
 
@@ -89,7 +94,7 @@ const PanCakeDetails = styled(Box)`
     background-color white;
     text-align: center;
   }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 992px) {
     top: 400px;
   }
 `;
@@ -106,9 +111,9 @@ export default class pancakes extends Component {
   render() {
     return (
       <PanCakeDetails>
-        <TimeBox height={200}>
-          <Box position="relative">
-            <img src="https://website.s3.nl-ams.scw.cloud/ready-in-jpg.png" />
+        <TimeBox height={[150,150,170,200]}>
+          <Box width={["150px","150px","170px","200px"]} position="relative">
+            <img width="100%" height="100%" src="https://website.s3.nl-ams.scw.cloud/ready-in-jpg.png" />
             <AbsBox>
               <Capital color="#a47d5e" fontSize={18} fontWeight="bold" letterSpacing="1.8px" lineHeight="30px"> ready in </Capital>
               <Text color="#dfc691" fontSize={92} fontWeight="bold" letterSpacing="6px" lineHeight={0.8}> 40 </Text>

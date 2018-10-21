@@ -109,7 +109,7 @@ export default class Banner extends Component {
         <Image width="100%" src="https://website.s3.nl-ams.scw.cloud/hero-jpg.png" /> 
         {/* <Align position="absolute"> */}
           <BannerFlex justifyContent="center" alignItems="center" width={1}>
-            <Tagline pt={[0,40,0]}color="white" fontSize={[32,64,92]}> Pastry with love </Tagline>
+            <Tagline pt={[0,40,0]}color="white" fontSize={[28,64,92]}> Pastry with love </Tagline>
             <Box pt={[2,3,4]}>
               <Line/>
               <Dashed/>

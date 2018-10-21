@@ -20,12 +20,13 @@ const Absolute = styled(Flex)`
   justify-content: center;
   width: 100%;
   height: 100%;
+  background-color: #a9a9a933;
   @media only screen and (max-width: 767px) {
     height: auto;
     bottom: auto;
     top: 15px;
   }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     height: auto;
     bottom: auto;
     top: 50px;
@@ -49,18 +50,24 @@ const StyleBox = styled(Box)`
 
 const StyledContainer = styled.div`
   padding-right: 120px;
+  margin-top: 80px;
   @media only screen and (max-width: 767px) {
-    padding-right: 15px;
+  margin-top: 0px;
+  padding-right: 15px;
   }
   @media (min-width: 768px) and (max-width: 1023px) {
-    padding-right: 0px;    
+    padding-right: 0px;   
+    margin-top: 0px;
+
   }
 `;
 export default class pancakes extends Component {
   render() {
     return (
-      <StyleBox height={["800px","1000px","auto"]} position="relative">
-        <img width="100%" src="https://website.s3.nl-ams.scw.cloud/third-section-bg-jpg.png"/>
+      <StyleBox height={["800px","1000px","700px","auto"]} position="relative">
+        <Box height={["auto","400px","700px","auto"]}>
+          <img height="100%" width="100%" src="https://website.s3.nl-ams.scw.cloud/third-section-bg-jpg.png"/>
+        </Box>
         <Absolute>
           <StyledContainer>
             <Box display={['none','none','block']} py={0} position="relative">
@@ -78,7 +85,7 @@ export default class pancakes extends Component {
                   <img width="100%" height="100%" src="https://website.s3.nl-ams.scw.cloud/cake-small.png" />
                 </Box>
               </Flex>
-              <Box>
+              <Box style={{backgroundColor: "white"}}>
                 <PancakeDetails/>
               </Box>
             </Box>

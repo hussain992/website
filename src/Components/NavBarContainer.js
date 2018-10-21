@@ -105,7 +105,7 @@ export default class NavBarContainer extends Component {
 
     return (
       <Box position="relative">
-        <NavBox display={['none','none','block']}>
+        <NavBox display={['none','none','none','block']}>
           <Container>
             <Flex alignItems="center">
               <Box>
@@ -133,7 +133,7 @@ export default class NavBarContainer extends Component {
             </Flex>
           </Container>
         </NavBox>
-        <Box display={['block','block','none']}>
+        <Box display={['block','block','block','none']}>
           <NavBoxSmall >
             <StyledA onClick={() => this.setState({ openLeft: !openLeft, openRight: false })}>
               <img height="30px" src="https://website.s3.nl-ams.scw.cloud/menu-button.png" ></img>
